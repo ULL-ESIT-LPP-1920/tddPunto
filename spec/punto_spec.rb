@@ -14,5 +14,13 @@ describe Punto do
 			expect(origen.to_s).to eq("(0,0)")
 		end
 	end
+
+	context "probando los métodos de instancia" do
+		it "se puede multiplicar por un escalar" do
+			unidad = Punto.new(1,1)
+
+			expect((unidad * 5).to_s).to eq("(5,5)")
+		end
+	end
 end
 
